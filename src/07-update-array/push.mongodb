@@ -1,0 +1,23 @@
+use("magic_store")
+
+// insertar un dato
+/* db.inventory.updateOne(
+  {_id:4},
+  {
+    $push: {
+    tags: "headphones"
+    }
+  }
+) */
+
+//insertar varios datos
+db.inventory.updateMany(
+  {},
+  {
+    $push: {
+      tags: {
+        $each: ["prueba", "funciona"]
+      }
+    }
+  }
+)

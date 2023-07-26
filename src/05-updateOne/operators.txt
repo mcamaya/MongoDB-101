@@ -1,0 +1,6 @@
+Operators:
+
+$set: Sets the value of a field in a document
+$inc: Increments the value of a field by the specified amount
+
+ObjectId: Function to find a doc with objId

@@ -1,0 +1,23 @@
+use("magic_store")
+
+//remover un solo elemento
+db.inventory.updateMany(
+  {},
+  {
+    $pull: {
+    tags: "headphones"
+    }
+  }
+)
+
+//remover varios elementos
+db.inventory.updateMany(
+  {},
+  {
+    $pull: {
+    tags: {
+      $in: ["school", "book"]
+    }
+    }
+  }
+)

@@ -1,0 +1,13 @@
+use('magic_store')
+
+db.products.updateOne(
+  {_id:3}, //query
+
+  { //con base al dato inicial, añadimos un valor
+    $inc: {
+    price: 150
+    }
+  }
+)
+
+//antes el price era de 900, ahora de 1050

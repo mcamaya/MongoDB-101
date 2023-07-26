@@ -1,0 +1,11 @@
+use('magic_store')
+
+db.products.updateOne(
+  {_id:ObjectId("64bfb5642a8e1bf31126597e")}, //query
+
+  { //con base al dato inicial, añadimos un valor
+    $inc: {
+    price: 150
+    }
+  }
+)

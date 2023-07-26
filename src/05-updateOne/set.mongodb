@@ -1,0 +1,12 @@
+use('magic_store')
+
+db.products.updateOne(
+  {_id:4}, //query
+  //change -> operators
+  {
+    $set: {
+    name: 'change made',
+    tags: ['a', 'b', 'c'],
+    }
+  }
+)

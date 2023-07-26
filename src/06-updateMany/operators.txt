@@ -1,0 +1,5 @@
+Operators:
+
+$set: Sets or create the value of a field in a document
+$rename : Renames a field
+$unset: Removes the specified field from a document

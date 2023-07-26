@@ -1,0 +1,2 @@
+use('magic_store')
+db.products.find()
